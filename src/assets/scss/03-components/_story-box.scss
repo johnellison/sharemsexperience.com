@@ -7,6 +7,7 @@
   @include callout-base;
   @include callout-style($light-beige);
   @include material-shadow(1);
+  color: $body-font-color;
   margin-bottom: 0;
   @include breakpoint(medium) {
     @include grid-col(8);

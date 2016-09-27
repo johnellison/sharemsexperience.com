@@ -9,16 +9,22 @@
   <nav class="top-bar" id="main-menu">
     <div class="top-bar-left">
       <ul class="menu">
-        <li class="menu-text"><h1>Ellison Homestead</h1></li>
+        <li class="menu-text"><h1><a href="/">Ellison Homestead</a></h1></li>
       </ul>
     </div>
     <div class="top-bar-right">
-      <ul class="menu">
+      <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
         <li>
           <a href="#">Our Story</a>
         </li>
         <li><a href="#">Events</a></li>
-        <li><a href="#">Retreats</a></li>
+        <li class="has-submenu">
+          <a href="#">Retreats</a>
+          <ul class="submenu menu vertical" data-submenu>
+            <li><a href="/food-as-medicine">Food as Medicine</a></li>
+            <li><a href="/food-as-medicine">Place of Refuge</a></li>
+          </ul>
+        </li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>

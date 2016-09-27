@@ -19,5 +19,6 @@
     "motion-ui": "~1.2.2",
     "typeplate-starter-kit": "^3.0.1"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {}
 }

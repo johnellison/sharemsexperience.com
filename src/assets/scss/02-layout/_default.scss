@@ -8,3 +8,12 @@
   @include grid-column-row;
   @include grid-column-position(center);
 }
+
+.homestead-projects {
+  @include grid-row;
+  @include breakpoint(large) {
+    @include grid-column(8);
+    @include grid-column-position(-2);
+
+  }
+}

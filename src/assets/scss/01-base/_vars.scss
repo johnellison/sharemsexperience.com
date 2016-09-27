@@ -1,3 +1,11 @@
+// Colors
+$white: #FAFAFA;
+$horse-hair: #2D2115;
+$light-beige: #EEE7DE;
+$beige: #A49183;
+$slate-blue: #7889A5;
+$shrimp-pink: #E9B0A6;
+
 // Typography
 $line-height: 1.65;
 $leading: 1.65rem;
@@ -6,11 +14,5 @@ $header-font-family: 'Lora', Palatino, Georgia, 'Times New Roman', Times, serif;
 $font-family-serif: Palatino, Georgia, 'Times New Roman',  serif;
 $font-family-sans-serif: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-// Colors
-$white: #FAFAFA;
-$dark-leather: #3E2711;
-$horse-hair: #2D2115;
-$light-beige: #EEE7DE;
-$beige: #A49183;
-$slate-blue: #7889A5;
-$shrimp-pink: #E9B0A6;
+$body-font-color: lighten($horse-hair, 5%);
+$header-font-color: $horse-hair;

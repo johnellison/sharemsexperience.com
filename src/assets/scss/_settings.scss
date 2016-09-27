@@ -61,7 +61,7 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
-$body-font-color: $black;
+$body-font-color: $horse-hair;
 $body-font-family: $font-family-serif;
 $body-antialiased: true;
 $global-margin: $leading;
@@ -139,7 +139,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
+$anchor-color: $body-font-color;
 $anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
@@ -286,16 +286,16 @@ $closebutton-color-hover: $black;
 
 $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
-$drilldown-arrow-color: $primary-color;
+$drilldown-arrow-color: $anchor-color;
 $drilldown-background: $white;
 
 // 16. Dropdown
 // ------------
 
-$dropdown-padding: 1rem;
-$dropdown-border: 1px solid $medium-gray;
-$dropdown-font-size: 1rem;
-$dropdown-width: 300px;
+$dropdown-padding: $leading;
+$dropdown-border: 1px solid $light-beige;
+$dropdown-font-size: $leading;
+$dropdown-width: 400px;
 $dropdown-radius: $global-radius;
 $dropdown-sizes: (
   tiny: 100px,
@@ -310,7 +310,7 @@ $dropdownmenu-arrows: true;
 $dropdownmenu-arrow-color: $anchor-color;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: $white;
-$dropdownmenu-border: 1px solid $medium-gray;
+$dropdownmenu-border: none;
 
 // 18. Flex Video
 // --------------
@@ -524,7 +524,7 @@ $tab-content-padding: 1rem;
 // 33. Thumbnail
 // -------------
 
-$thumbnail-border: solid 4px $white;
+$thumbnail-border: none;
 $thumbnail-margin-bottom: $global-margin;
 $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
 $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);

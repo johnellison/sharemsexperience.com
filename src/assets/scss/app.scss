@@ -24,9 +24,9 @@
 // @include foundation-close-button;
 @include foundation-menu;
 @include foundation-menu-icon;
-// @include foundation-drilldown-menu;
-// @include foundation-dropdown;
-// @include foundation-dropdown-menu;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
 // @include foundation-flex-video;
 // @include foundation-label;
 // @include foundation-media-object;
@@ -42,7 +42,7 @@
 // @include foundation-switch;
 // @include foundation-table;
 // @include foundation-tabs;
-// @include foundation-thumbnail;
+@include foundation-thumbnail;
 @include foundation-title-bar;
 // @include foundation-tooltip;
 @include foundation-top-bar;
@@ -62,7 +62,8 @@
 @import '02-layout/default';
 
 // 03-Components
-@import '03-components/button',
+@import '03-components/block-grid',
+        '03-components/button',
         '03-components/header',
         '03-components/marquee',
         '03-components/scroll-cta',

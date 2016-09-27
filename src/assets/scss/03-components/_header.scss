@@ -30,6 +30,10 @@ $menu-background: $white;
           color: $horse-hair;
           text-decoration: none;
           font-family: $font-family-sans-serif;
+          &:hover {
+            color: lighten($horse-hair, 20%);
+            transition: color, 0.3s, ease-in-out;
+          }
       }
     }
   }
@@ -39,6 +43,9 @@ $menu-background: $white;
   h1 {
     font-size: 1.2rem;
     margin: 0;
+    a {
+      font-family: $header-font-family !important;
+    }
   }
 
   @include breakpoint(medium down) {
@@ -47,10 +54,6 @@ $menu-background: $white;
 }
 
 @include breakpoint (medium) {
-  .menu:last-child {
-    border-left: 1px solid #4e4e4e;
-  }
-
   .menu:first-child {
     border-left: none;
   }
@@ -75,4 +78,13 @@ $menu-background: $white;
 
 .menu-icon {
   @include hamburger($color: $horse-hair, $color-hover: lighten($horse-hair, 20%));
+}
+
+.submenu {
+  @include material-shadow(3);
+  padding: 0;
+  li:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid $light-beige;
+  }
 }
