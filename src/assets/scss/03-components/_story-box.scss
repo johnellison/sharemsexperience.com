@@ -1,0 +1,23 @@
+.story-box {
+  @include grid-row;
+  margin-bottom: $leading*2;
+}
+
+.story-box__content {
+  @include callout-base;
+  @include callout-style($light-beige);
+  @include material-shadow(1);
+  margin-bottom: 0;
+  @include breakpoint(medium) {
+    @include grid-col(8);
+    @include grid-column-position(center);
+    p {
+      font-size: 1.15rem;
+    }
+  }
+  @include breakpoint(large) {
+    @include grid-col(6);
+    @include grid-column-position(center);
+    padding: $leading $leading*1.5 !important;
+  }
+}

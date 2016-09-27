@@ -55,6 +55,7 @@ function pages() {
       data: 'src/data/',
       helpers: 'src/helpers/'
     }))
+    .pipe($.typeset())
     .pipe(gulp.dest(PATHS.dist));
 }
 

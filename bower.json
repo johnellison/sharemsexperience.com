@@ -1,10 +1,10 @@
 {
-  "name": "foundation-ssg",
+  "name": "Ellison Homestead Front End",
   "version": "1.0.0",
   "authors": [
-    "ZURB <foundation@zurb.com>"
+    "John Ellison <john@john-ellison.com>"
   ],
-  "description": "Static site generator for Foundation for Sites.",
+  "description": "Front-end for ellisonhomestead.com",
   "main": "gulpfile.js",
   "license": "MIT",
   "ignore": [
@@ -16,7 +16,8 @@
   ],
   "dependencies": {
     "foundation-sites": "~6.2.3",
-    "motion-ui": "~1.2.2"
+    "motion-ui": "~1.2.2",
+    "typeplate-starter-kit": "^3.0.1"
   },
   "private": true
 }

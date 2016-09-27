@@ -1,0 +1,16 @@
+.marquee {
+  text-align: center;
+  margin-bottom: $leading*3;
+  &#home {
+    background-image: url('/assets/img/homestead-1600x1000.jpg');
+  }
+}
+
+.marquee__content {
+  @include grid-col-row;
+  padding: 25vh 0;
+  max-width: 75vw;
+  h1, .subheader {
+    // color: $white;
+  }
+}

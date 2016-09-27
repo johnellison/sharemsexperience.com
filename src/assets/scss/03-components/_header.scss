@@ -1,0 +1,78 @@
+$menu-background: $white;
+
+.top-nav {
+  width: 100%;
+  min-height: 3.6rem;
+  background: $menu-background;
+  @include material-shadow(2);
+  position: relative;
+}
+
+.title-bar {
+  background: $menu-background;
+  padding: 0.9rem;
+  @include breakpoint(medium down) {
+    float: right;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.top-bar {
+  background: $menu-background;
+
+  ul {
+    background: $menu-background;
+    li {
+      background: $menu-background;
+        a {
+          color: $horse-hair;
+          text-decoration: none;
+          font-family: $font-family-sans-serif;
+      }
+    }
+  }
+}
+
+.menu-text {
+  h1 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  @include breakpoint(medium down) {
+    display: none !important;
+  }
+}
+
+@include breakpoint (medium) {
+  .menu:last-child {
+    border-left: 1px solid #4e4e4e;
+  }
+
+  .menu:first-child {
+    border-left: none;
+  }
+
+  .menu {
+    li:not(:last-child) {
+      border-right: 1px solid $light-beige;
+    }
+  }
+}
+
+.title-bar-title {
+  color: $horse-hair;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-size: 1.25rem;
+  &:hover {
+    color: lighten($horse-hair, 20%);
+  }
+}
+
+.menu-icon {
+  @include hamburger($color: $horse-hair, $color-hover: lighten($horse-hair, 20%));
+}

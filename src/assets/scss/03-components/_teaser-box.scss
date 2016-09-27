@@ -1,0 +1,28 @@
+.teaser-box {
+  @include grid-row;
+}
+
+.teaser-box__content {
+  @include grid-column(4, 0);
+  @include callout-base;
+  @include callout-style($beige);
+  text-align: left;
+  color: $white;
+  z-index: 1;
+  @include material-shadow(2);
+  border-radius: $global-radius;
+  h2, h3, h4, h5, h6 {
+    text-align: left;
+    color: $white;
+  }
+}
+
+.teaser-box__photo {
+  @include grid-column(9, 0);
+  position: relative;
+  top: -$leading*10;
+  img {
+    @include material-shadow(1);
+    border-radius: $global-radius;
+  }
+}

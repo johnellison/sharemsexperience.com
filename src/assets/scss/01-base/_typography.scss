@@ -1,0 +1,142 @@
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  color: $horse-hair;
+}
+
+h2.subheader {
+  font-family: $font-family-sans-serif;
+  font-weight: 300 !important;
+  line-height: 1.3;
+  @extend .typl8-gamma;
+  @include breakpoint(medium) {
+    @include typl8-typescale(
+        map-get($typl8-scale, typl8-mega),
+        $typl8-font-base,
+        '#{$typl8-typescale-unit}',
+        $typl8-measure
+      );
+  }
+}
+
+h4.subheader {
+  font-family: $font-family-sans-serif;
+  font-weight: 300 !important;
+  line-height: 1.3;
+  @extend .typl8-delta;
+  @include breakpoint(medium) {
+    @include typl8-typescale(
+        map-get($typl8-scale, typl8-mega),
+        $typl8-font-base,
+        '#{$typl8-typescale-unit}',
+        $typl8-measure
+      );
+  }
+}
+
+a {
+  color: $horse-hair;
+  &:hover {
+    color: lighten($horse-hair, 20%);
+    transition: color, 0.3s, ease-in-out;
+  }
+}
+// h1 {
+//   @extend .typl8-beta;
+//
+//   @include breakpoint(medium) {
+//     @include typl8-typescale(
+//       map-get($typl8-scale, typl8-alpha),
+//       $typl8-font-base,
+//       #{$typl8-typescale-unit},
+//       $typl8-measure
+//       );
+//   }
+//
+//   @include breakpoint(large) {
+//     @include typl8-typescale(
+//       map-get($typl8-scale, typl8-mega),
+//       $typl8-font-base,
+//       #{$typl8-typescale-unit},
+//       $typl8-measure
+//       );
+//   }
+//
+//   @include breakpoint(xlarge) {
+//     @include typl8-typescale(
+//       map-get($typl8-scale, typl8-giga),
+//       $typl8-font-base,
+//       #{$typl8-typescale-unit},
+//       $typl8-measure
+//       );
+//   }
+// }
+//
+//
+// .blockquote {
+//   @include typl8-blockquote("—");
+//   border: 1px solid $body-font-color;
+//   small {
+//     letter-spacing: .8125px;
+//   }
+//   a {
+//     color: $primary-color;
+//   }
+//   cite {
+//     padding: 0 1rem .825rem 0;
+//   }
+// }
+//
+// .pull-quote {
+//   @extend .typl8-pull-quote;
+//   // margin-bottom: 1.65rem;
+// }
+//
+// .drop-cap {
+//   @extend .typl8-drop-cap;
+// }
+
+// Typeset Config
+.small-caps {
+  font-variant: small-caps;
+}
+
+.pull-double {
+  margin-left: -.38rem;
+}
+
+.push-double {
+  margin-right: .38rem;
+}
+
+.pull-single {
+  margin-left: -.15rem;
+}
+
+.push-single {
+  margin-right: .15rem;
+}
+
+.pull-T,.pull-V,.pull-W,.pull-Y {
+  margin-left: -.07rem;
+}
+
+.push-T,.push-V,.push-W,.push-Y {
+  margin-right: .07rem;
+}
+
+.pull-C,.pull-O,.pull-c,.pull-o {
+  margin-left: -.04rem;
+}
+
+.push-C,.push-O,.push-c,.push-o {
+  margin-right: .04rem;
+}
+
+.pull-A {
+  margin-left: -.03rem;
+}
+
+.push-A {
+  margin-right: .03rem;
+}
