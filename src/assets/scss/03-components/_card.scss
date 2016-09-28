@@ -1,16 +1,7 @@
-a {
-  .card {
-    text-decoration: none;
-  }
-}
 .card {
   text-align: left;
   border-radius: $global-radius;
   border: 1px solid #D8D8D8;
-  h2, h3, h4, h5 {
-    text-align: left;
-    margin-bottom: $leading;
-  }
   p {
     text-indent: 0;
     & + p {
@@ -21,9 +12,28 @@ a {
     @include material-shadow(1);
     transition: box-shadow, 0.3s, ease-in-out;
   }
+  .card__image {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
 }
 
 .card__footer {
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  h1 {
+    @extend .typl8-gamma;
+    text-align: left;
+    line-height: 1.5;
+  }
+  p:hover {
+    text-decoration: none;
+  }
   padding: 0 $leading;
 }
 
@@ -31,6 +41,10 @@ a {
   margin-bottom: $leading;
   font-family: $font-family-sans-serif;
   color: $beige;
+}
+
+.card__footer a.card__excerpt:hover {
+  text-decoration: none;
 }
 
 .card--overlay {
@@ -67,7 +81,14 @@ a {
 }
 
 .card--featured {
+  margin-bottom: $leading*3;
   text-align: center;
+  .card__footer {
+    h1 {
+      text-align: center;
+      @extend .typl8-beta;
+    }
+  }
   p {
     font-family: $font-family-sans-serif;
     color: $beige;
