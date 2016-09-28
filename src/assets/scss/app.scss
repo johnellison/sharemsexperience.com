@@ -54,7 +54,8 @@
 // @include motion-ui-animations;
 
 // 01-Base
-@import '01-base/mixins',
+@import '01-base/global',
+        '01-base/mixins',
         '01-base/typeplate-index',
         '01-base/typography';
 
@@ -62,8 +63,8 @@
 @import '02-layout/default';
 
 // 03-Components
-@import '03-components/block-grid',
-        '03-components/button',
+@import '03-components/button',
+        '03-components/card',
         '03-components/header',
         '03-components/marquee',
         '03-components/scroll-cta',

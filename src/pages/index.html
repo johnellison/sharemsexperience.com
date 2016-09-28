@@ -1,22 +1,25 @@
 <article role="main" class="home">
-  <div class="marquee" id="home">
-    <div class="marquee__content">
-      <h1>Ellison Homestead</h1>
-      <h2 class="subheader">We're on a mission to live a more simple and sustainable life whilst serving some of the world's deepest needs.</h2>
+  <section class="welcome">
+    <div class="marquee" id="home">
+      <div class="marquee__content">
+        <h1>Ellison Homestead</h1>
+        <h2 class="subheader">We're on a mission to live a more simple and sustainable life whilst serving some of the world's deepest needs.</h2>
+      </div>
+      <a class="scroll-cta" href="#story"></a>
     </div>
-    <a class="scroll-cta" href="#story"></a>
-  </div>
-  <div class="story-box" id="story">
-    <div class="story-box__content">
-      <p class="typl8-drop-cap">
-        We met volunteering on a kibbutz in Israel in 2011. Since then we've adventured together across the world. From starting grassroots recycling initiatives in Egypt to designing and building classrooms for children with special needs in India, we've followed our passion to help make the world a better place.
-      </p>
-      <p>
-        When Sophie caught Typhoid in India it began a long three-year journey of chronic illness. After seeing dozens of traditional doctors, being prescribed several courses of antibiotics&mdash;her health just kept getting worse...
-      </p>
-      <a href="/our-story">Read more...</a>
+    <div class="story-box" id="story">
+      <div class="story-box__content">
+        <p class="typl8-drop-cap">
+          We met volunteering on a kibbutz in Israel in 2011. Since then we've adventured together across the world. From starting grassroots recycling initiatives in Egypt to designing and building classrooms for children with special needs in India, we've followed our passion to help make the world a better place.
+        </p>
+        <p>
+          When Sophie caught Typhoid in India it began a long three-year journey of chronic illness. After seeing dozens of traditional doctors, being prescribed several courses of antibiotics&mdash;her health just kept getting worse...
+        </p>
+        <a href="/our-story">Read more...</a>
+      </div>
     </div>
-  </div>
+  </section>
+
   <section class="retreats">
     <h2>Retreats</h2>
     <div class="teaser-box">
@@ -44,29 +47,89 @@
       </div>
     </div>
   </section>
+
   <section class="homestead-projects">
     <h2>Homestead Projects</h2>
-    <div class="block-grid">
-      <div class="block-grid__item">
-        <a href="#"><img src="/assets/img/chicken.jpg" alt=""></a>
+    <div class="row small-up-1 medium-up-2">
+      <div class="card--overlay column">
+        <a href="#">
+            <img src="/assets/img/chicken.jpg" alt="chickens">
+            <div class="card--overlay__caption">
+              <h3>Chickens</h3>
+            </div>
+        </a>
       </div>
-      <div class="block-grid__item">
-        <a href="#"><img src="/assets/img/goats.jpg" alt=""></a>
+      <div class="card--overlay column">
+        <a href="#">
+          <img src="/assets/img/goats.jpg" alt="goats">
+          <div class="card--overlay__caption">
+            <h3>Goats</h3>
+          </div>
+        </a>
       </div>
-      <div class="block-grid__item">
-        <a href=""><img src="/assets/img/honey.jpg" alt=""></a>
+      <div class="card--overlay column">
+        <a href="">
+          <img src="/assets/img/vegetable-garden.jpg" alt="Vegetables">
+          <div class="card--overlay__caption">
+            <h3>Vegetables</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card--overlay column">
+        <a href="#">
+          <img src="/assets/img/ducklings.jpg" alt="Ducks">
+          <div class="card--overlay__caption">
+            <h3>Ducks</h3>
+          </div>
+        </a>
       </div>
     </div>
-    <div class="block-grid">
-      <div class="block-grid__item">
-        <a href=""><img src="/assets/img/vegetable-garden.jpg" alt=""></a>
+  </section>
+  <section class="blog">
+    <h2>Blog</h2>
+    <article >
+      <div class="card--featured">
+        <img src="/assets/img/harvesting-apples.jpg" alt="harvesting apples">
+        <h3>Harvesting Apples in Norfolk</h3>
+        <p>Sophie Ellison &mdash; <time pubdate>September 28, 2016</time></p>
       </div>
-      <div class="block-grid__item end">
-        <a href="#"><img src="/assets/img/ducklings.jpg" alt=""></a>
-      </div>
-      <div class="block-grid__item">
-        <a href=""><img src="/assets/img/honey.jpg" alt=""></a>
-      </div>
+    </article>
+    <div class="row">
+      <a href="#">
+        <div class="card medium-4 columns">
+          <img src="http://placehold.it/300x200" alt="">
+          <h4>Post Title</h4>
+          <p class="card__published">
+            John Ellison &mdash;
+            <time pubdate>XX September, 2016</time>
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate voluptas temporibus veniam...</p>
+
+        </div>
+      </a>
+      <a href="#">
+        <div class="card medium-4 columns">
+          <img src="http://placehold.it/300x200" alt="">
+          <h4>Post Title</h4>
+          <p class="card__published">
+            Sophie Ellison &mdash;
+            <time pubdate>XX September, 2016</time>
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate voluptas temporibus veniam...</p>
+
+        </div>
+      </a>
+      <a href="#">
+        <div class="card medium-4 columns">
+          <img src="http://placehold.it/300x200" alt="">
+          <h4>Post Title</h4>
+          <p class="card__published">
+            John Ellison &mdash;
+            <time pubdate>XX September, 2016</time>
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate voluptas temporibus veniam...</p>
+        </div>
+      </a>
     </div>
   </section>
 </article>

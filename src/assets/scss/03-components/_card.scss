@@ -1,0 +1,61 @@
+.card {
+  text-align: left;
+  border-radius: $global-radius;
+  border: 1px solid #D8D8D8;
+  h2, h3, h4, h5 {
+    text-align: left;
+  }
+  p {
+    text-indent: 0;
+  }
+  // @include material-shadow(1);
+  &:hover {
+    @include material-shadow(2);
+    transition: box-shadow, 0.3s, ease-in-out;
+  }
+}
+
+.card__published p {
+  font-family: $font-family-sans-serif;
+  color: $beige;
+}
+
+.card--overlay {
+  position: relative;
+  @extend .card;
+  box-shadow: none;
+  &:hover {
+    box-shadow: none;
+  }
+  &:hover .card--overlay__caption {
+    opacity: 1;
+  }
+  img {
+    border-radius: $global-radius;
+    @include material-shadow(1);
+    &:hover {
+      @include material-shadow(2);
+      transition: box-shadow, 0.3s, ease-in-out;
+    }
+  }
+}
+
+.card--overlay__caption {
+  overflow: hidden;
+  opacity: 0;
+  margin-top: -$leading;
+  transition: opacity 0.3s ease-in-out;
+  @include vertical-center;
+  @include horizontal-center;
+  h3, h4, h5 {
+    color: $white;
+  }
+}
+
+.card--featured {
+  text-align: center;
+  p {
+    font-family: $font-family-sans-serif;
+    color: $beige;
+  }
+}

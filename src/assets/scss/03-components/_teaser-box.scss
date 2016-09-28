@@ -1,6 +1,8 @@
 .teaser-box {
   @include grid-row;
-  margin-bottom: $leading*6;
+  @include breakpoint(large) {
+    margin-bottom: $leading*6;
+  }
   &:nth-child(odd) {
     @include breakpoint(large) {
       .teaser-box__content {
@@ -10,6 +12,11 @@
       .teaser-box__photo {
         @include grid-column-position(-5);
       }
+    }
+  }
+  @include breakpoint(large down) {
+    &:nth-last-child(1) {
+      margin-bottom: $leading*3;
     }
   }
 }
@@ -55,4 +62,5 @@
     position: relative;
     top: $leading*3;
   }
+  padding: 0 !important;
 }
