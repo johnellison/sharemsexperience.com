@@ -52,24 +52,25 @@
   @extend .card;
   box-shadow: none;
   border: none;
+  overflow: hidden;
   &:hover {
     box-shadow: none;
-  }
-  &:hover .card--overlay__caption {
-    opacity: 1;
+    .card--overlay__caption {
+      opacity: 1;
+    }
+    img {
+      @include material-shadow(2);
+      transition: all 0.3s ease-in-out;
+    }
   }
   img {
+    display: block;
     border-radius: $global-radius;
     @include material-shadow(1);
-    &:hover {
-      @include material-shadow(2);
-      transition: box-shadow, 0.3s, ease-in-out;
-    }
   }
 }
 
 .card--overlay__caption {
-  overflow: hidden;
   opacity: 0;
   margin-top: -$leading;
   transition: opacity 0.3s ease-in-out;
@@ -78,6 +79,7 @@
   h3, h4, h5 {
     color: $white;
   }
+  text-shadow: 0 1px 3px rgba(0,0,0, 0.8);
 }
 
 .card--featured {
