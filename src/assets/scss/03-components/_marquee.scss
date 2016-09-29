@@ -1,5 +1,6 @@
 .marquee {
   margin-bottom: $leading*3;
+  background-color: $light-beige;
   &#home {
     background-image: url('/assets/img/homestead-1600x1000.jpg');
   }
@@ -15,9 +16,15 @@
 .marquee--secondary {
   position: relative;
   margin: $leading*4 0 $leading*3 0;
-  height: 55vh;
+  min-height: 55vh;
+  max-height: 75vh;
+  background-color: $beige;
   &#story {
     background-image: url('/assets/img/railway-journey.jpg');
+    background-size: cover;
+  }
+  &#food-as-medicine {
+    background-image: url('/assets/img/blueberries.jpg');
     background-size: cover;
   }
   .marquee__content {

@@ -1,3 +1,11 @@
+@mixin proper-anchor-underline {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 50%, transparent 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 0.15em;
+  background-position: 0 1.01em;
+}
+
 // Material Shadow Mixin
 @mixin material-shadow($depth) {
   @if $depth < 1 {

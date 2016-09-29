@@ -43,13 +43,14 @@ a {
     color: lighten($horse-hair, 20%);
     transition: color, 0.3s, ease-in-out;
   }
-  a {
-    text-decoration: none;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 50%, transparent 50%);
-    background-repeat: repeat-x;
-    background-size: 2px 0.2em;
-    background-position: 0 1.01em;
-  }
+}
+
+.main-content p a {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 50%, transparent 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 0.15em;
+  background-position: 0 1.01em;
 }
 
 p.lead {

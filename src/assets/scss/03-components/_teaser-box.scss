@@ -3,6 +3,9 @@
   @include breakpoint(large) {
     margin-bottom: $leading*6;
   }
+  a {
+    color: $white;
+  }
   &:nth-child(odd) {
     @include breakpoint(large) {
       .teaser-box__content {
