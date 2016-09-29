@@ -1,0 +1,26 @@
+.cta__wrapper {
+  background-color: lighten($shrimp-pink, 5%);
+}
+
+.cta__content {
+  padding: 18.5vh 0;
+}
+
+.cta__header {
+  // padding: 0 12vw;
+  h2 {
+    margin-bottom: $leading;
+  }
+  .subheading {
+    margin-bottom: $leading*2;
+  }
+}
+
+.cta__form {
+  // @include breakpoint(medium) {
+  //   @include grid-col(4);
+  //   @include grid-column-position(center);
+  // }
+  margin: 0 auto;
+  display: table;
+}

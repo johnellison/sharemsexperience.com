@@ -2,6 +2,7 @@
   text-align: left;
   border-radius: $global-radius;
   border: 1px solid #D8D8D8;
+  margin-bottom: $leading;
   p {
     text-indent: 0;
     & + p {
@@ -29,7 +30,7 @@
   h1 {
     @extend .typl8-gamma;
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.3;
   }
   p:hover {
     text-decoration: none;

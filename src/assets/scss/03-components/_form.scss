@@ -1,0 +1,38 @@
+form {
+  input[type="text"],
+  input[type="email"] {
+    border-radius: $global-radius;
+    border: 2px solid $white;
+    background-color: rgba(255,255,255, 0.1);
+    font-family: $font-family-sans-serif;
+    padding: 1.27rem 1rem;
+    @include breakpoint(medium) {
+      margin: 0;
+    }
+    &::placeholder {
+      color: $white;
+    }
+  }
+  input[type="submit"].button {
+    min-width: 100%;
+    margin: 0;
+    // @extend .button;
+    background-color: $white;
+    color: $horse-hair;
+    border: 2px solid $white;
+    &:hover {
+      background-color: $horse-hair;
+      color: $white;
+      border: 2px solid $horse-hair;
+    }
+  }
+}
+
+.input-group {
+  > :first-child {
+    border-radius: 50px 0 0px 50px;
+  }
+  > :last-child > * {
+    border-radius: 0 50px 50px 0;
+  }
+}
