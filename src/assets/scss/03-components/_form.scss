@@ -12,6 +12,12 @@ form {
     &::placeholder {
       color: $white;
     }
+    &:focus {
+      background-color: rgba(255,255,255, 0.0);
+      border: 2px solid $white;
+      @include material-shadow(1);
+      transition: all 0.3s ease-in-out;
+    }
   }
   input[type="submit"].button {
     min-width: 100%;
