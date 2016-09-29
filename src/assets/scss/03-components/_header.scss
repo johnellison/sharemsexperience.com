@@ -29,7 +29,7 @@ $menu-background: $white;
         a {
           color: $horse-hair;
           text-decoration: none;
-          font-family: $font-family-sans-serif;
+          font-family: $sans-serif;
           &:hover {
             transition: all, 0.3s, ease-in-out;
             text-decoration: underline;
@@ -67,7 +67,7 @@ $menu-background: $white;
 
 .title-bar-title {
   color: $horse-hair;
-  font-family: $font-family-sans-serif;
+  font-family: $sans-serif;
   text-transform: uppercase;
   letter-spacing: .5px;
   font-size: 1.25rem;

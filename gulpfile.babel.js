@@ -55,7 +55,7 @@ function pages() {
       data: 'src/data/',
       helpers: 'src/helpers/'
     }))
-    .pipe($.typeset())
+    .pipe($.typeset({ disable: ['smallCaps'] }))
     .pipe(gulp.dest(PATHS.dist));
 }
 
