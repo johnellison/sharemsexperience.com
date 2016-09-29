@@ -80,10 +80,10 @@ p.lead {
 hr {
     padding: 0;
     border: none;
-    border-top: medium double $beige;
-    color: $beige;
+    border-top: medium double $horse-hair;
+    color: $horse-hair;
     text-align: center;
-    margin-bottom: $leading*2;
+    margin: $leading*2 0;
 }
 hr:after {
     content: "§";

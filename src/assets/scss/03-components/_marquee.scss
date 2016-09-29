@@ -35,6 +35,9 @@
     .subheader {
       background-color: $white;
       padding: $leading/2 $leading;
+      @include breakpoint(small only) {
+        font-size: 1.2rem;
+      }
     }
   }
 }
