@@ -11,3 +11,10 @@
 .homestead-projects, .blog {
   margin-bottom: $leading*3;
 }
+
+.main-content {
+  margin-bottom: $leading*2;
+  h2, h3, h4 , h5 {
+    text-align: left;
+  }
+}

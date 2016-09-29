@@ -12,9 +12,6 @@
   @include breakpoint(medium) {
     @include grid-col(8);
     @include grid-column-position(center);
-    p {
-      font-size: 1.15rem;
-    }
   }
   @include breakpoint(large) {
     @include grid-col(6);

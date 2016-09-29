@@ -1,18 +1,40 @@
 .marquee {
-  text-align: center;
   margin-bottom: $leading*3;
   &#home {
     background-image: url('/assets/img/homestead-1600x1000.jpg');
   }
+  .marquee__content {
+    @include grid-col-row;
+    padding: 25vh 0;
+    @include breakpoint(large) {
+      max-width: 75vw;
+    }
+  }
 }
 
-.marquee__content {
-  @include grid-col-row;
-  padding: 25vh 0;
-  h1, .subheader {
-    // color: $white;
+.marquee--secondary {
+  position: relative;
+  margin: $leading*4 0 $leading*3 0;
+  height: 55vh;
+  &#story {
+    background-image: url('/assets/img/railway-journey.jpg');
+    background-size: cover;
   }
-  @include breakpoint(large) {
-    max-width: 75vw;
+  .marquee__content {
+    h1, .subheader {
+      text-align: left;
+      position: relative;
+      margin-bottom: $leading;
+      bottom: $leading*2;
+      padding: $leading $leading*2;
+      background-color: $light-beige;
+      width: auto;
+      display: inline-block;
+      @include material-shadow(1);
+    }
+    .subheader {
+      background-color: $white;
+      padding: $leading/2 $leading;
+    }
   }
 }

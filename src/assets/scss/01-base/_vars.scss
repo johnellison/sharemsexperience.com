@@ -14,5 +14,5 @@ $header-font-family: 'Lora', Palatino, Georgia, 'Times New Roman', Times, serif;
 $serif: Palatino, Georgia, 'Times New Roman',  serif;
 $sans-serif: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-$body-font-color: lighten($horse-hair, 5%);
+$body-font-color: $horse-hair;
 $header-font-color: $horse-hair;
