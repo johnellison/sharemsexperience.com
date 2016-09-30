@@ -23,6 +23,17 @@
     background-image: url('/assets/img/railway-journey.jpg');
     background-size: cover;
   }
+  &#events {
+    background-image: url('/assets/img/fireworks-m.jpg');
+    background-size: cover;
+    background-position: 0% 25%;
+  }
+  &#contact {
+    background-image: url('/assets/img/john-and-sophie-m.jpg');
+    background-size: cover;
+    background-position: 50% 18%;
+    min-height: 65vh;
+  }
   &#food-as-medicine {
     background-image: url('/assets/img/blueberries.jpg');
     background-size: cover;
