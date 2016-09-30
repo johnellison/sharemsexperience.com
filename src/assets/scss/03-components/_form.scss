@@ -1,4 +1,5 @@
 form {
+  font-family: $sans-serif;
   input[type="text"],
   input[type="email"] {
     border-radius: $global-radius;
@@ -20,9 +21,7 @@ form {
     }
   }
   input[type="submit"].button {
-    min-width: 100%;
     margin: 0;
-    // @extend .button;
     background-color: $white;
     color: $horse-hair;
     border: 2px solid $white;
@@ -30,6 +29,60 @@ form {
       background-color: $horse-hair;
       color: $white;
       border: 2px solid $horse-hair;
+    }
+  }
+  &.madlib {
+    color: $white;
+    font-size: 1rem;
+    line-height: 2.3;
+    ul[role="radio-group"] {
+      list-style: none;
+      padding: 0;
+    }
+    textarea {
+      background-color: rgba(255,255,255, 0.1);
+      border: none;
+      border-bottom: 2px solid white;
+      min-height: $leading*2;
+      padding: 0 $leading/4;
+      color: $white;
+      margin-top: $leading/2;
+    }
+    fieldset {
+      margin-bottom: $leading;
+    }
+    span {
+      color: $white;
+      font-size: 1rem;
+      &.salutation {
+        display: block;
+        margin-bottom: $leading;
+      }
+    }
+    label {
+      display: inline-block;
+      color: $white;
+
+    }
+    input[type="text"], input[type="email"] {
+      display: inline-block;
+      border: none;
+      border-bottom: 2px solid $white;
+      padding: 0 $leading/4;
+      margin-left: .3rem;
+      font-size: 1rem;
+      width: $leading*5;
+      height: $leading;
+      color: $white;
+      &[type="email"], &.location {
+        width: $leading*6;
+      }
+    }
+    input[type="radio"] {
+      margin: 0 $leading/4 $leading/2 0;
+    }
+    input[type="submit"] {
+      @extend .button;
     }
   }
 }

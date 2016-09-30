@@ -25,3 +25,22 @@
   margin: 0 auto;
   display: table;
 }
+
+.cta--split {
+  display: flex;
+}
+
+.cta--split__column {
+  text-align: left;
+  flex: 1 1;
+  padding: $leading*4 $leading*2;
+  h2, h3, h4, h5, h6 {
+    text-align: left;
+  }
+  &:first-child {
+    background-color: lighten($shrimp-pink, 5%);
+  }
+  &:last-child {
+    background-color: darken($slate-blue, 5%);
+  }
+}
