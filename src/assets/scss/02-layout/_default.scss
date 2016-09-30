@@ -18,3 +18,10 @@
     text-align: left;
   }
 }
+
+article[role="main"].blog {
+  margin-top: $leading*2;
+  h1 {
+    text-align: center;
+  }
+}
