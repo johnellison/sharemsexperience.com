@@ -141,3 +141,18 @@ function watch() {
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
+
+// function deploy() {
+//   return gulp.src('dist/**')
+//     .pipe($.rsync({
+//       root: 'public/',
+//       hostname: '46.101.44.93',
+//       username: 'je',
+//       port: '30303',
+//       destination: '/var/www/ellisonhomestead.com/',
+//       incremental: true,
+//       progress: true,
+//       emptyDirectories: true,
+//       compress: true
+//     }));
+// }
