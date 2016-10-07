@@ -24,6 +24,20 @@ function loadConfig() {
   return yaml.load(ymlFile);
 }
 
+gulp.task('deploy', function() {
+  return gulp.src('dist/**')
+    .pipe($.rsync({
+      hostname: '46.101.44.93',
+      username: 'je',
+      port: '30303',
+      destination: '/var/www/ellisonhomestead.com/public/',
+      incremental: true,
+      progress: true,
+      emptyDirectories: true,
+      compress: true
+    }));
+})
+
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
  gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
@@ -141,18 +155,3 @@ function watch() {
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
-
-// function deploy() {
-//   return gulp.src('dist/**')
-//     .pipe($.rsync({
-//       root: 'public/',
-//       hostname: '46.101.44.93',
-//       username: 'je',
-//       port: '30303',
-//       destination: '/var/www/ellisonhomestead.com/',
-//       incremental: true,
-//       progress: true,
-//       emptyDirectories: true,
-//       compress: true
-//     }));
-// }
