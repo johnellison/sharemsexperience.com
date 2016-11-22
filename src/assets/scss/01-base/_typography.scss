@@ -1,8 +1,10 @@
 // Headings
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font-family;
-  color: $horse-hair;
 }
+
+h4 { margin-bottom: $leading/4; }
+
 
 h1 {
   margin-bottom: $leading/2;
@@ -38,9 +40,9 @@ h4.subheader {
 }
 
 a {
-  color: $horse-hair;
+  color: $black;
   &:hover {
-    color: lighten($horse-hair, 20%);
+    color: lighten($black, 20%);
     transition: color, 0.3s, ease-in-out;
   }
 }
@@ -55,141 +57,4 @@ a {
 
 p.lead {
   font-size: 1.15rem;
-  a {
-    text-decoration: none;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 50%, transparent 50%);
-    background-repeat: repeat-x;
-    background-size: 2px 0.1em;
-    background-position: 0 1.01em;
-  }
-}
-
-.pull-quote {
-  @extend .typl8-pull-quote;
-  padding: 0 .4rem 0.1rem .4rem;
-  &:before, &:after {
-    font-family: $header-font-family;
-  }
-  &:before {
-    top: -1.9rem;
-  }
-  &:after {
-    bottom: .5rem;
-  }
-}
-
-hr {
-    padding: 0;
-    border: none;
-    border-top: medium double $horse-hair;
-    color: $horse-hair;
-    text-align: center;
-    margin: $leading*2 0;
-}
-hr:after {
-    content: "§";
-    display: inline-block;
-    position: relative;
-    top: -.9rem;
-    font-size: 1rem;
-    padding: 0 0.25em;
-    background: $white;
-}
-
-
-// h1 {
-//   @extend .typl8-beta;
-//
-//   @include breakpoint(medium) {
-//     @include typl8-typescale(
-//       map-get($typl8-scale, typl8-alpha),
-//       $typl8-font-base,
-//       #{$typl8-typescale-unit},
-//       $typl8-measure
-//       );
-//   }
-//
-//   @include breakpoint(large) {
-//     @include typl8-typescale(
-//       map-get($typl8-scale, typl8-mega),
-//       $typl8-font-base,
-//       #{$typl8-typescale-unit},
-//       $typl8-measure
-//       );
-//   }
-//
-//   @include breakpoint(xlarge) {
-//     @include typl8-typescale(
-//       map-get($typl8-scale, typl8-giga),
-//       $typl8-font-base,
-//       #{$typl8-typescale-unit},
-//       $typl8-measure
-//       );
-//   }
-// }
-//
-//
-// .blockquote {
-//   @include typl8-blockquote("—");
-//   border: 1px solid $body-font-color;
-//   small {
-//     letter-spacing: .8125px;
-//   }
-//   a {
-//     color: $primary-color;
-//   }
-//   cite {
-//     padding: 0 1rem .825rem 0;
-//   }
-// }
-//
-
-//
-// .drop-cap {
-//   @extend .typl8-drop-cap;
-// }
-
-// Typeset Config
-// .small-caps {
-//   font-variant: small-caps;
-// }
-
-.pull-double {
-  margin-left: -.38rem;
-}
-
-.push-double {
-  margin-right: .38rem;
-}
-
-.pull-single {
-  margin-left: -.15rem;
-}
-
-.push-single {
-  margin-right: .15rem;
-}
-
-.pull-T,.pull-V,.pull-W,.pull-Y {
-  margin-left: -.07rem;
-}
-
-.push-T,.push-V,.push-W,.push-Y {
-  margin-right: .07rem;
-}
-
-.pull-C,.pull-O,.pull-c,.pull-o {
-  margin-left: -.04rem;
-}
-
-.push-C,.push-O,.push-c,.push-o {
-  margin-right: .04rem;
-}
-
-.pull-A {
-  margin-left: -.03rem;
-}
-
-.push-A {
-  margin-right: .03rem;
 }

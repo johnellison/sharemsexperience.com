@@ -1,7 +1,25 @@
-.home {
-  h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-  }
+.welcome, .cta {
+  padding: $leading*3 0 $leading*1.5 0;
+  background-color: lighten($light-gray, 5%);
+}
+
+.cta {
+  text-align: center;
+}
+
+.scroll-cta {
+  display: block;
+  margin: $leading/2 auto 0;
+  text-align: center;
+}
+
+.arrow {
+  font-size: .8rem;
+}
+
+.how-it-works {
+  padding: $leading*1.5 0 $leading*3 0;
+  background-color: lighten(#B3E1FF, 5%);
 }
 
 .retreats, .homestead-projects, .blog {

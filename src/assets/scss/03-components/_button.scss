@@ -1,15 +1,8 @@
-.button {
-  border: 2px solid $white;
-  color: $white;
+a.button {
   text-decoration: none;
   font-family: $sans-serif;
-  font-variant: small-caps;
   font-weight: 500;
-  letter-spacing: .25px;
-  transition: box-shadow, 0.3s, ease-in-out;
   &:hover {
-    background-color: $white;
-    color: $horse-hair;
     @include material-shadow(1);
   }
 }
