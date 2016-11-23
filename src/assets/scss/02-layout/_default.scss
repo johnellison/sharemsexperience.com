@@ -1,15 +1,10 @@
-.welcome, .cta {
+.welcome {
   padding: $leading*3 0 $leading*1.5 0;
   background-color: lighten($light-gray, 5%);
 }
 
 .cta {
-  text-align: center;
-}
-
-.scroll-cta {
   display: block;
-  margin: $leading/2 auto 0;
   text-align: center;
 }
 
@@ -20,6 +15,10 @@
 .how-it-works {
   padding: $leading*1.5 0 $leading*3 0;
   background-color: lighten(#B3E1FF, 5%);
+}
+
+.how-it-works__header {
+  text-align: center;
 }
 
 .retreats, .homestead-projects, .blog {

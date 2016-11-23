@@ -3,7 +3,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $header-font-family;
 }
 
-h4 { margin-bottom: $leading/4; }
+h3 {
+  margin-bottom: $leading/2;
+}
+
+h5 { margin-bottom:$leading/4; }
 
 
 h1 {
@@ -57,4 +61,12 @@ a {
 
 p.lead {
   font-size: 1.15rem;
+}
+
+p + p {
+  margin-bottom: $leading;
+}
+
+p {
+  margin-bottom: $leading;
 }

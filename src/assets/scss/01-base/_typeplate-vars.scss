@@ -26,8 +26,8 @@ $typl8-typescale-unit: em !default;
 //
 // $typl8-paragraph-spacing             [<'false'> | <'true'>]
 
-$typl8-paragraph-spacing: false !default;
-$typl8-indent-val: $leading !default;
+$typl8-paragraph-spacing: true !default;
+$typl8-indent-val: 0 !default;
 
 
 // $Small-Print
@@ -115,7 +115,7 @@ $typl8-smcps-weight: 600 !default;
 // -------------------------------------//
 
 $typl8-dropcap-float-position: left !default;
-$typl8-dropcap-font-size: 5.1rem !default;
+$typl8-dropcap-font-size: 3rem !default;
 $typl8-dropcap-font-family: $header-font-family !default;
 $typl8-dropcap-txt-indent: 0 !default;
 $typl8-dropcap-margin: -0.15rem 0.4rem -0.4rem -0.2rem !default;
