@@ -2,7 +2,6 @@ $(document).foundation();
 
 // GA Event Step 1
 $('#step1').click(function() {
-  console.log($(this).text());
   ga('send', {
     hitType: 'event',
     eventCategory: 'apply',
@@ -13,7 +12,6 @@ $('#step1').click(function() {
 
 // GA Event Step 2
 $('#step2').click(function() {
-  console.log($(this).text());
   ga('send', {
     hitType: 'event',
     eventCategory: 'apply',

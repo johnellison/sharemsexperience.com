@@ -2,6 +2,7 @@ a.button {
   text-decoration: none;
   font-family: $sans-serif;
   font-weight: 500;
+  margin-bottom: $leading/2;
   &:hover {
     @include material-shadow(1);
   }
