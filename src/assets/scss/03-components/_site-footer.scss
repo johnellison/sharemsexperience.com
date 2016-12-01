@@ -1,0 +1,12 @@
+.site-footer {
+  padding: $leading 0;
+  background-color: $dark-gray;
+  color: $white;
+  font-family: $sans-serif;
+  a {
+    color: $white;
+    &.tel {
+      text-decoration: none;
+    }
+  }
+}

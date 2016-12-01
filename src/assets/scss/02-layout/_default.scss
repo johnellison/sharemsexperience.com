@@ -42,3 +42,10 @@ article[role="main"].blog {
     text-align: center;
   }
 }
+
+ul.inline-list {
+  list-style: none;
+  li {
+    display: inline-block;
+  }
+}

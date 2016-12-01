@@ -1,4 +1,4 @@
-$(document).foundation();
+// $(document).foundation();
 
 // GA Event Step 1
 $('#step1').click(function() {
