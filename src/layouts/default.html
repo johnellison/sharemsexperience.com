@@ -10,12 +10,11 @@
     <meta name="description" content="Do you or a loved on have MS? Would you be willing to share your experiences to help others with MS live better lives?">
     <link href="https://fonts.googleapis.com/css?family=Lora:700|Roboto:300,500" rel="stylesheet">
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
-    <meta property="og:url" content="http://shareMSexperience.com" />
+    <meta property="og:url" content="http://sharemsexperience.com" />
     <meta property="og:title" content="Share Your MS Experience" />
     <meta property="og:description" content="Do you or a loved on have MS? Would you be willing to share your experiences to help others with MS live better lives?" />
-    <meta property="og:image"              content="http://shareMSexperience.com/assets/img/sarah-john-sophie-1200x630.jpg" />
-    <meta property="og:locale" content="en_UK">
-    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="http://sharemsexperience.com/assets/img/sarah-john-sophie-1200x630.jpg" />
+    <meta property="fb:app_id" content="1457615860939158">
   </head>
   <body>
     <!-- {{> header}} -->
@@ -36,5 +35,13 @@
       ga('send', 'pageview');
 
     </script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1457615860939158";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>
