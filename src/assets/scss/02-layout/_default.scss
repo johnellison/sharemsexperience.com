@@ -1,6 +1,13 @@
-.welcome {
+.welcome, .faq {
   padding: $leading*3 0 $leading*1.5 0;
   background-color: lighten($light-gray, 5%);
+}
+
+.welcome__column {
+  @include grid-col;
+  @include breakpoint(1080px) {
+    @include grid-col(6);
+  }
 }
 
 .cta {
@@ -10,6 +17,11 @@
 
 .arrow {
   font-size: .8rem;
+}
+
+.secondary {
+  padding: $leading*3 0;
+  background-color: lighten(#B3E1FF, 5%);
 }
 
 .how-it-works {
