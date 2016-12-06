@@ -61,3 +61,8 @@ ul.inline-list {
     display: inline-block;
   }
 }
+
+// Safari Fix for flex row
+.row:before, .row:after {
+  width: 0;
+}
